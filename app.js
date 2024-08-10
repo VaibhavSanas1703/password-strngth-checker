@@ -40,7 +40,7 @@ userPassword.addEventListener("input", () => {
   } else if (userPassowordValue.length > 8) {
     setTimeout(() => {
       userPassword.style.borderColor = "red";
-      strengthCheck.innerHTML = "Password must be 8 Characters only";
+      strengthCheck.innerHTML = "Password must be 8 characters only";
       strengthCheck.style.color = "red";
     }, 200);
   }
