@@ -44,6 +44,7 @@ userPassword.addEventListener("input", () => {
       strengthCheck.style.color = "red";
     }, 200);
   }
+  
 });
 
 hideAndShow.addEventListener("click", () => {
@@ -55,3 +56,4 @@ hideAndShow.addEventListener("click", () => {
     hideAndShow.src = "images/eye-off.svg";
   }
 });
+
