@@ -40,7 +40,7 @@ h1{
 
 .container{
    width: 300px;
-   height: 45px;
+   height: 50px;
    position: relative;
 }
 
@@ -70,12 +70,12 @@ h1{
 .container img{
    width: 19px;
    position: absolute;
-   transform: translateY(70%);
+   transform: translateY(85%);
    right: 15px;
-   -webkit-transform: translateY(70%);
-   -moz-transform: translateY(70%);
-   -ms-transform: translateY(70%);
-   -o-transform: translateY(70%);
+   -webkit-transform: translateY(85%);
+   -moz-transform: translateY(85%);
+   -ms-transform: translateY(85%);
+   -o-transform: translateY(85%);
    font-size: 17px;
    color: var(--white-color);
    cursor: pointer;
@@ -87,7 +87,7 @@ h1{
 }
 
 .container input:focus{
-   border-color: var(--primary-color);
+   border-color: var(--white-color);
 }
 
 ::placeholder{
