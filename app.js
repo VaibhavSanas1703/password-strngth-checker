@@ -3,6 +3,12 @@ const userPassword = document.getElementById("pass-input");
 const hideAndShow = document.querySelector(".container img");
 const strengthCheck = document.getElementById("strength");
 
+window.addEventListener('load',() => {
+   setTimeout(() => {
+      hideAndShow.classList.toggle('toggle')
+   }, 1300);
+})
+
 userPassword.addEventListener("input", () => {
   let userPassowordValue = userPassword.value;
 
@@ -11,7 +17,7 @@ userPassword.addEventListener("input", () => {
       userPassword.style.borderColor = "red";
       strengthCheck.innerHTML = "Enter password";
       strengthCheck.style.color = "red";
-      userPassword.classList.toggle("animate__headShake");
+      userPassword.classList.add("animate__headShake");
     }, 200);
   } else if (userPassowordValue.length == 1) {
     setTimeout(() => {
