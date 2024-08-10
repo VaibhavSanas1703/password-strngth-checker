@@ -11,7 +11,7 @@
 :root{
    --primary-color:#7C00FE;
    --bg-color:#171717;
-   --input-color:#232323;
+   --input-color:#2f2f2f;
    --white-color:#eeeeee8b;
    --green: #5bea5b;
 }
@@ -53,7 +53,7 @@ h1{
    padding: 0 10px;
    font-size: 16px;
    background: var(--input-color);
-   color: var(--white-color);
+   color: #fcfcfc;
    letter-spacing: 0.6px;
    border-radius: 10px;
    -webkit-border-radius: 10px;
@@ -86,9 +86,7 @@ h1{
    -o-transition: .5s;
 }
 
-.container input:focus{
-   border-color: var(--white-color);
-}
+
 
 ::placeholder{
    letter-spacing: 0;
