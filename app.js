@@ -10,30 +10,40 @@ userPassword.addEventListener('input',() => {
    let userPassowordValue = userPassword.value;
 
    if(userPassowordValue.length == 0){
-      userPassword.style.borderColor = 'red';
+      setTimeout(() => {
+         userPassword.style.borderColor = 'red';
       strengthCheck.innerHTML = 'Enter password';
       strengthCheck.style.color = 'red'
-      userPassword.classList.toggle('animate__headShake')
+         userPassword.classList.toggle('animate__headShake')
+      }, 200);
    }
    else if(userPassowordValue.length == 1){
-      userPassword.style.borderColor = 'gold';
+      setTimeout(() => {
+         userPassword.style.borderColor = 'gold';
       strengthCheck.innerHTML = 'Password is too Weak';
       strengthCheck.style.color = 'gold'
+      }, 200);
    }
    else if(userPassowordValue.length == 5){
-      userPassword.style.borderColor = '#7C00FE';
+      setTimeout(() => {
+         userPassword.style.borderColor = 'tomato';
       strengthCheck.innerHTML = 'Password is too Medium';
-      strengthCheck.style.color = '#7C00FE'
+      strengthCheck.style.color = 'tomato'
+      }, 200);
    }
    else if(userPassowordValue.length == 8){
-      userPassword.style.borderColor = '#5bea5b';
+      setTimeout(() => {
+         userPassword.style.borderColor = '#5bea5b';
       strengthCheck.innerHTML = 'Password is Strong';
       strengthCheck.style.color = '#5bea5b'
+      }, 200);
    }
    else if(userPassowordValue.length > 8){
-      userPassword.style.borderColor = 'red';
+      setTimeout(() => {
+         userPassword.style.borderColor = 'red';
       strengthCheck.innerHTML = 'Password must be 8 Characters only';
       strengthCheck.style.color = 'red'
+      }, 200);
    }
 
 })
